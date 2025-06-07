@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/product.css" />
+    <title>blueberry</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container-header">
+        <div class="header-logo">
+          <img
+            src="https://blueberry-react-next.maraviyainfotech.com/assets/img/logo/logo.png"
+            alt="logo"
+          />
+        </div>
+        <div class="header-search">
+          <nav class="search-btn">
+            <p>vegetables</p>
+            <svg
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 512 512"
+              height="16px"
+              width="16px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"
+              ></path>
+            </svg>
+          </nav>
+          <input type="text" placeholder="Search Product......." />
+          <svg
+            class="search-icon"
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            version="1.1"
+            id="search"
+            x="0px"
+            y="0px"
+            viewBox="0 0 24 24"
+            height="25px"
+            width="25px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g>
+              <path
+                d="M20.031,20.79c0.46,0.46,1.17-0.25,0.71-0.7l-3.75-3.76c1.27-1.41,2.04-3.27,2.04-5.31
+		c0-4.39-3.57-7.96-7.96-7.96s-7.96,3.57-7.96,7.96c0,4.39,3.57,7.96,7.96,7.96c1.98,0,3.81-0.73,5.21-1.94L20.031,20.79z
+		 M4.11,11.02c0-3.84,3.13-6.96,6.96-6.96c3.84,0,6.96,3.12,6.96,6.96c0,3.84-3.12,6.96-6.96,6.96C7.24,17.98,4.11,14.86,4.11,11.02
+		z"
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <div class="header-icons">
+          <div class="user">
+            <nav class="icon">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                height="35px"
+                width="35px"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="User">
+                  <g>
+                    <path
+                      d="M17.438,21.937H6.562a2.5,2.5,0,0,1-2.5-2.5V18.61c0-3.969,3.561-7.2,7.938-7.2s7.938,3.229,7.938,7.2v.827A2.5,2.5,0,0,1,17.438,21.937ZM12,12.412c-3.826,0-6.938,2.78-6.938,6.2v.827a1.5,1.5,0,0,0,1.5,1.5H17.438a1.5,1.5,0,0,0,1.5-1.5V18.61C18.938,15.192,15.826,12.412,12,12.412Z"
+                    ></path>
+                    <path
+                      d="M12,9.911a3.924,3.924,0,1,1,3.923-3.924A3.927,3.927,0,0,1,12,9.911Zm0-6.847a2.924,2.924,0,1,0,2.923,2.923A2.926,2.926,0,0,0,12,3.064Z"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+            </nav>
+            <nav class="user-content">
+              <span>account</span>
+              <strong>login</strong>
+            </nav>
+          </div>
+          <div class="wishlist">
+            <nav class="icon">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                height="35px"
+                width="35px"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="Star">
+                  <path
+                    d="M16.6,20.463a1.5,1.5,0,0,1-.7-.174l-3.666-1.927a.5.5,0,0,0-.464,0L8.1,20.289a1.5,1.5,0,0,1-2.177-1.581l.7-4.082a.5.5,0,0,0-.143-.442L3.516,11.293a1.5,1.5,0,0,1,.832-2.559l4.1-.6a.5.5,0,0,0,.376-.273l1.833-3.714a1.5,1.5,0,0,1,2.69,0l1.833,3.714a.5.5,0,0,0,.376.274l4.1.6a1.5,1.5,0,0,1,.832,2.559l-2.965,2.891a.5.5,0,0,0-.144.442l.7,4.082A1.5,1.5,0,0,1,16.6,20.463Zm-3.9-2.986L16.364,19.4a.5.5,0,0,0,.725-.527l-.7-4.082a1.5,1.5,0,0,1,.432-1.328l2.965-2.89a.5.5,0,0,0-.277-.853l-4.1-.6a1.5,1.5,0,0,1-1.13-.821L12.449,4.594a.516.516,0,0,0-.9,0L9.719,8.308a1.5,1.5,0,0,1-1.13.82l-4.1.6a.5.5,0,0,0-.277.853L7.18,13.468A1.5,1.5,0,0,1,7.611,14.8l-.7,4.082a.5.5,0,0,0,.726.527L11.3,17.477a1.5,1.5,0,0,1,1.4,0Z"
+                  ></path>
+                </g>
+              </svg>
+            </nav>
+            <nav class="wishlist-content">
+              <span><strong class="items-wishlist-count">5</strong> items</span>
+              <strong>wishlist</strong>
+            </nav>
+          </div>
+          <div class="items-cart">
+            <nav class="icon">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                height="35px"
+                width="35px"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="Shopping_Cart">
+                  <path
+                    d="M17.437,19.934c0,0.552 -0.448,1 -1,1c-0.552,0 -1,-0.448 -1,-1c0,-0.552 0.448,-1 1,-1c0.552,0 1,0.448 1,1Zm-11.217,-4.266l-0.945,-10.9c-0.03,-0.391 -0.356,-0.693 -0.749,-0.693l-0.966,-0c-0.276,-0 -0.5,-0.224 -0.5,-0.5c0,-0.276 0.224,-0.5 0.5,-0.5l0.966,-0c0.916,-0 1.676,0.704 1.746,1.617l0.139,1.818l13.03,-0c0.885,-0 1.577,0.76 1.494,1.638l-0.668,7.52c-0.121,1.285 -1.199,2.267 -2.489,2.267l-9.069,0c-1.29,0 -2.367,-0.981 -2.489,-2.267Zm0.274,-8.158l0.722,8.066c0.073,0.77 0.719,1.359 1.493,1.359l9.069,0c0.774,0 1.42,-0.589 1.493,-1.359l0.668,-7.518c0.028,-0.294 -0.203,-0.548 -0.498,-0.548l-12.947,-0Zm4.454,12.424c-0,0.552 -0.448,1 -1,1c-0.552,0 -1,-0.448 -1,-1c-0,-0.552 0.448,-1 1,-1c0.552,0 1,0.448 1,1Z"
+                  ></path>
+                </g>
+              </svg>
+            </nav>
+            <nav class="items-cart-content">
+              <span><strong class="items-cart-count">5</strong> items</span>
+              <strong>cart</strong>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="navbar-Categories">
+      <div class="icons-links-categories">
+        <div class="Categories-icon">
+          <svg
+            class="svg-icon"
+            width="2.2em"
+            height="2.2em"
+            viewBox="0 0 1024 1024"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M384 928H192a96 96 0 0 1-96-96V640a96 96 0 0 1 96-96h192a96 96 0 0 1 96 96v192a96 96 0 0 1-96 96zM192 608a32 32 0 0 0-32 32v192a32 32 0 0 0 32 32h192a32 32 0 0 0 32-32V640a32 32 0 0 0-32-32H192zM784 928H640a96 96 0 0 1-96-96V640a96 96 0 0 1 96-96h192a96 96 0 0 1 96 96v144a32 32 0 0 1-64 0V640a32 32 0 0 0-32-32H640a32 32 0 0 0-32 32v192a32 32 0 0 0 32 32h144a32 32 0 0 1 0 64zM384 480H192a96 96 0 0 1-96-96V192a96 96 0 0 1 96-96h192a96 96 0 0 1 96 96v192a96 96 0 0 1-96 96zM192 160a32 32 0 0 0-32 32v192a32 32 0 0 0 32 32h192a32 32 0 0 0 32-32V192a32 32 0 0 0-32-32H192zM832 480H640a96 96 0 0 1-96-96V192a96 96 0 0 1 96-96h192a96 96 0 0 1 96 96v192a96 96 0 0 1-96 96zM640 160a32 32 0 0 0-32 32v192a32 32 0 0 0 32 32h192a32 32 0 0 0 32-32V192a32 32 0 0 0-32-32H640z"
+            ></path>
+          </svg>
+        </div>
+        <div class="Categories-links">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">products</a></li>
+            <li><a href="#">pages</a></li>
+            <li><a href="#">Blog</a></li>
+            <li class="offers">
+              <svg
+                width="1.5em"
+                height="1.5em"
+                fill="#686e7d"
+                stroke="#686e7d"
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                x="0"
+                y="0"
+                viewBox="0 0 64 64"
+              >
+                <g>
+                  <path
+                    d="M10 16v22c0 .3.1.6.2.8.3.6 6.5 13.8 21 20h.2c.2 0 .3.1.5.1s.3 0 .5-.1h.2c14.5-6.2 20.8-19.4 21-20 .1-.3.2-.5.2-.8V16c0-.9-.6-1.7-1.5-1.9-7.6-1.9-19.3-9.6-19.4-9.7-.1-.1-.2-.1-.4-.2-.1 0-.1 0-.2-.1h-.9c-.1 0-.2.1-.3.1-.1.1-.2.1-.4.2s-11.8 7.8-19.4 9.7c-.7.2-1.3 1-1.3 1.9zm4 1.5c6.7-2.1 15-7.2 18-9.1 3 1.9 11.3 7 18 9.1v20c-1.1 2.1-6.7 12.1-18 17.3-11.3-5.2-16.9-15.2-18-17.3z"
+                    opacity="1"
+                    data-original="#000000"
+                  ></path>
+                  <path
+                    d="M28.6 38.4c.4.4.9.6 1.4.6s1-.2 1.4-.6l9.9-9.9c.8-.8.8-2 0-2.8s-2-.8-2.8 0L30 34.2l-4.5-4.5c-.8-.8-2-.8-2.8 0s-.8 2 0 2.8z"
+                    opacity="1"
+                    data-original="#000000"
+                  ></path>
+                </g>
+              </svg>
+              <a href="#">offers</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="categories-location">
+        <div class="location">
+          <nav class="location-icon">
+            <svg
+              stroke="#6c80d9"
+              fill="#6c80d9"
+              stroke-width="0"
+              viewBox="0 0 512 512"
+              height="16px"
+              width="16px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="32"
+                d="M256 48c-79.5 0-144 61.39-144 137 0 87 96 224.87 131.25 272.49a15.77 15.77 0 0 0 25.5 0C304 409.89 400 272.07 400 185c0-75.61-64.5-137-144-137z"
+              ></path>
+              <circle
+                cx="256"
+                cy="192"
+                r="48"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="32"
+              ></circle>
+            </svg>
+          </nav>
+          <nav class="location-address">
+            <p>Location</p>
+          </nav>
+          <nav class="location-arrow">
+            <svg
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 512 512"
+              height="16px"
+              width="16px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"
+              ></path>
+            </svg>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="container-page-product">
+      <div class="content-up-page">
+        <h3>Product Page</h3>
+        <nav class="product-link-home">
+          <a href="#">Home</a>
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            viewBox="0 0 24 24"
+            height="16px"
+            width="16px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path fill="none" d="M0 0h24v24H0z"></path>
+            <path d="M6.41 6 5 7.41 9.58 12 5 16.59 6.41 18l6-6z"></path>
+            <path d="m13 6-1.41 1.41L16.17 12l-4.58 4.59L13 18l6-6z"></path>
+          </svg>
+          <p>Product Page</p>
+        </nav>
+      </div>
+      <div class="product-item-content">
+        <div class="product-item">
+          <div class="product-item-img">
+            <img src="" alt="" />
+          </div>
+          <div class="product-content">
+            <h2>product Name</h2>
+            <div class="product-content-rate-an-feedback">
+              <div class="product-content-rate">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 576 512"
+                  height="16px"
+                  width="16px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="product-content-feedback">
+                <p><span>500</span> Feedback</p>
+              </div>
+            </div>
+            <div class="product-content-description">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas
+                nihil laboriosam voluptatem ab consectetur dolorum id, soluta
+                sunt at culpa commodi totam quod natus qui!
+              </p>
+            </div>
+            <div class="product-content-price">
+              <div class="product-content-price-New">
+                <div class="product-price-sict">
+                  <p>$923</p>
+                  <p class="discount">-78%</p>
+                </div>
+                <div class="Stock-Keeping-Unit">
+                  <strong><span class="sku">S.K.U. :</span>WH123</strong>
+                  <span class="stock">In Stock</span>
+                </div>
+              </div>
+              <div class="Maximum-Retail-Price">
+                <p><span>M.R.P. :</span>$1,999.00</p>
+              </div>
+            </div>
+            <div class="product-content-list">
+              <ul>
+                <li>Closure : Hook & Loop</li>
+                <li>Sole : Polyvinyl Chloride</li>
+                <li>Width : Medium</li>
+                <li>Outer Material : A-Grade Standard Quality</li>
+              </ul>
+            </div>
+            <div class="product-content-weight">
+              <h2>Weight</h2>
+              <nav class="product-content-weight-bord">
+                <span>0.5 kg</span>
+              </nav>
+            </div>
+            <div class="product-content-cart">
+              <div class="product-content-count">
+                <span>+</span>
+                <span>1</span>
+                <span>-</span>
+              </div>
+              <nav class="product-content-view-cart">
+                <h3>View Cart</h3>
+              </nav>
+              <div class="product-content-wish-list">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  height="16px"
+                  width="16px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="Heart">
+                    <path
+                      d="M12,20.043a.977.977,0,0,1-.7-.288L4.63,13.08A5.343,5.343,0,0,1,6.053,4.513,5.266,5.266,0,0,1,12,5.371a5.272,5.272,0,0,1,5.947-.858A5.343,5.343,0,0,1,19.37,13.08l-6.676,6.675A.977.977,0,0,1,12,20.043ZM8.355,4.963A4.015,4.015,0,0,0,6.511,5.4,4.4,4.4,0,0,0,4.122,8.643a4.345,4.345,0,0,0,1.215,3.73l6.675,6.675,6.651-6.675a4.345,4.345,0,0,0,1.215-3.73A4.4,4.4,0,0,0,17.489,5.4a4.338,4.338,0,0,0-4.968.852h0a.744.744,0,0,1-1.042,0A4.474,4.474,0,0,0,8.355,4.963Z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <div class="product-content-review">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 576 512"
+                  height="16px"
+                  width="16px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-content-detail-info-review">
+          <div class="product-content-DIR">
+            <h3>Detail</h3>
+            <h3>Detail</h3>
+            <h3>Detail</h3>
+          </div>
+          <div class="product-content-DIR-container">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
+              voluptatum. Vitae dolores alias repellat eligendi, officiis,
+              exercitationem corporis quisquam delectus cum non recusandae
+              numquam dignissimos molestiae magnam hic natus. Cumque.
+            </p>
+            <ul>
+              <li>Any Product types that You want - Simple, Configurable</li>
+              <li>Downloadable/Digital Products, Virtual Products</li>
+              <li>Inventory Management with Backordered items</li>
+              <li>Flatlock seams throughout.</li>
+            </ul>
+            <ul class="defrant-list">
+              <li>Highlights <span>Form FactorWhole </span></li>
+              <li>Seller <span>No Returns Allowed </span></li>
+              <li>Services <span>Cash on Delivery available</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/product.js"></script>
+  </body>
+</html>
