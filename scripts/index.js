@@ -315,13 +315,13 @@ function quntityMinus() {
             destination: "https://github.com/apvarun/toastify-js",
             newWindow: true,
             close: true,
-            gravity: "top", // `top` or `bottom`
-            position: "right", // `left`, `center` or `right`
-            stopOnFocus: true, // Prevents dismissing of toast on hover
+            gravity: "top",
+            position: "right",
+            stopOnFocus: true,
             style: {
                 background: "linear-gradient(to right,rgb(176, 18, 0),rgb(201, 61, 61))",
             },
-            onClick: function () { } // Callback after click
+            onClick: function () { }
         }).showToast();
     } else {
         quntity.innerHTML = parseInt(quntity.innerHTML) - 1;
@@ -331,13 +331,13 @@ function quntityMinus() {
             destination: "https://github.com/apvarun/toastify-js",
             newWindow: true,
             close: true,
-            gravity: "top", // `top` or `bottom`
-            position: "right", // `left`, `center` or `right`
-            stopOnFocus: true, // Prevents dismissing of toast on hover
+            gravity: "top",
+            position: "right",
+            stopOnFocus: true,
             style: {
                 background: "#4d5c9c",
             },
-            onClick: function () { } // Callback after click
+            onClick: function () { }
         }).showToast();
     }
 }

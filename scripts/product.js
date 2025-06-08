@@ -155,9 +155,9 @@ function displayfindSingleProduct() {
             </div>
             <div class="product-content-cart">
               <div class="product-content-count">
-                <span>+</span>
+                <span onclick="quantityPlusPageTow()">+</span>
                 <span>1</span>
-                <span>-</span>
+                <span onclick="quantityMinusPageTow()">-</span>
               </div>
               <nav class="product-content-view-cart">
                 <h3>View Cart</h3>
@@ -199,7 +199,7 @@ function displayfindSingleProduct() {
         </div>
         <div class="product-content-detail-info-review">
           <div class="product-content-DIR">
-            <h3>Detail</h3>
+            <h3 class="active">Detail</h3>
             <h3>information</h3>
             <h3>Reviews</h3>
           </div>
@@ -231,3 +231,16 @@ function displayfindSingleProduct() {
 }
 
 displayfindSingleProduct()
+
+function quantityPlusPageTow() {
+    const quantityTow = document.querySelector(".product-content-count span:nth-child(2)");
+    quantityTow.innerHTML = parseInt(quantityTow.innerHTML) + 1;
+}
+function quantityMinusPageTow() {
+    const quantityTow = document.querySelector(".product-content-count span:nth-child(2)");
+    if (quantityTow.innerHTML <= 1) {
+        quantityTow.textContent = 1
+    } else {
+        quantityTow.innerHTML = parseInt(quantityTow.innerHTML) - 1;
+    }
+}
