@@ -1,3 +1,4 @@
+let activeWeightTow = 0;
 const productsTow = [
     {
         id: 1,
@@ -78,6 +79,13 @@ const productsTow = [
 const searchParam = window.location.search;
 const param = new URLSearchParams(searchParam).get("slug");
 const findSingleProduct = productsTow.find((product) => product.slug === param);
+function activeWeightProductTwo(e) {
+    const weightsTwo = document.querySelectorAll(".product-content-weight-bord span");
+    weightsTwo.forEach((weight) => {
+        weight.classList.remove("active");
+    });
+    e.target.classList.add("active");
+}
 function displayfindSingleProduct() {
     let html;
     if (findSingleProduct) {
@@ -120,7 +128,7 @@ function displayfindSingleProduct() {
               <div class="product-content-price-New">
                 <div class="product-price-sict">
                   <p>$${findSingleProduct.isDiscount ? findSingleProduct.newPrice : findSingleProduct.oldPrice}</p>
-                  <p class="discount">-78%</p>
+                  <del class="discount">$${findSingleProduct.oldPrice}</del>
                 </div>
                 <div class="Stock-Keeping-Unit">
                   <strong><span class="sku">S.K.U. :</span>WH123</strong>
@@ -142,7 +150,7 @@ function displayfindSingleProduct() {
             <div class="product-content-weight">
               <h2>Weight</h2>
               <nav class="product-content-weight-bord">
-                <span>0.5 kg</span>
+              ${findSingleProduct.weight.map((weight, index) => `<span class="${index == 0 ? "active" : ""}" onclick="activeWeightProductTwo(event)">${weight}</span>`).join("")}
               </nav>
             </div>
             <div class="product-content-cart">
@@ -192,8 +200,8 @@ function displayfindSingleProduct() {
         <div class="product-content-detail-info-review">
           <div class="product-content-DIR">
             <h3>Detail</h3>
-            <h3>Detail</h3>
-            <h3>Detail</h3>
+            <h3>information</h3>
+            <h3>Reviews</h3>
           </div>
           <div class="product-content-DIR-container">
             <p>

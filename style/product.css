@@ -246,7 +246,7 @@ header {
 }
 .product-item-img {
   width: 35%;
-  height: 400px;
+  height: 500px;
   border: 1px solid var(--gray-color);
   border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -256,7 +256,7 @@ header {
 }
 .product-item-img img {
   width: 100%;
-  height: 400px;
+  height: 100%;
   object-fit: cover;
   border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -302,15 +302,17 @@ header {
 .product-price-sict {
   display: flex;
   align-items: center;
-  color: var(--dark-color);
+  gap: 0.3em;
 }
-.product-price-sict p,
-.discount {
+.product-price-sict p {
+  color: var(--main-color);
   font-size: 1.2em;
   font-weight: 600;
 }
 .discount {
-  color: var(--main-color);
+  font-size: 1em;
+  font-weight: 400;
+  color: var(--gray-color);
 }
 .Stock-Keeping-Unit {
   display: flex;
@@ -339,12 +341,15 @@ header {
   color: var(--gray-color);
 }
 .product-content-weight-bord {
-  max-width: 60px;
+  display: flex;
+  gap: 0.5em;
+}
+.product-content-weight-bord span {
+  width: 40px;
   height: 30px;
   border: 1px solid var(--gray-color);
   border-radius: 0.5em;
   display: flex;
-  align-items: center;
   justify-content: center;
   color: var(--gray-color);
   cursor: pointer;
@@ -353,7 +358,7 @@ header {
   -ms-border-radius: 0.5em;
   -o-border-radius: 0.5em;
 }
-.product-content-weight-bord.acteve {
+.product-content-weight-bord span.active {
   background: var(--main-color);
   color: #fff;
 }
