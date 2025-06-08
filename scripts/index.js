@@ -177,7 +177,7 @@ function displayProducts(data) {
                 .join("")}
                             </div>
                         </div>
-                        <a href="./product.html?slug=${product.slug}" class="product-title">${product.title}</a >
+                        <a href="http://127.0.0.1:5500/product.html?slug=${product.slug}" class="product-title">${product.title}</a >
                         <div class="product-card-content-price">
                             <div class="product-card-content-price-item">
                                 <strong>$${product.isDiscount ? product.newPrice : product.oldPrice}</strong>
