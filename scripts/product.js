@@ -14,6 +14,7 @@ const productsTow = [
         out_of_stock: false,
         weight: [100, 250, 500],
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1900s,",
+        DIR: ["Detail", "information", "Reviews"]
     },
     {
         id: 2,
@@ -29,6 +30,7 @@ const productsTow = [
         out_of_stock: false,
         weight: [100, 250, 500],
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1900s,",
+        DIR: ["Detail", "information", "Reviews"]
     },
     {
         id: 3,
@@ -44,6 +46,7 @@ const productsTow = [
         out_of_stock: false,
         weight: [100, 250, 500],
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1900s,",
+        DIR: ["Detail", "information", "Reviews"]
     },
     {
         id: 4,
@@ -59,6 +62,7 @@ const productsTow = [
         out_of_stock: false,
         weight: [100, 250, 500],
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1900s,",
+        DIR: ["Detail", "information", "Reviews"]
     },
     {
         id: 5,
@@ -74,6 +78,7 @@ const productsTow = [
         out_of_stock: true,
         weight: [100, 250, 500],
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1900s,",
+        DIR: ["Detail", "information", "Reviews"]
     },
 ];
 const searchParam = window.location.search;
@@ -84,6 +89,15 @@ function activeWeightProductTwo(e) {
     weightsTwo.forEach((weight) => {
         weight.classList.remove("active");
     });
+    e.target.classList.add("active");
+}
+function dirProductActive(e) {
+    const parent = e.target.parentElement;
+    const items = parent.querySelectorAll("h3");
+    items.forEach((item) => {
+        item.classList.remove("active");
+    });
+
     e.target.classList.add("active");
 }
 function displayfindSingleProduct() {
@@ -199,9 +213,8 @@ function displayfindSingleProduct() {
         </div>
         <div class="product-content-detail-info-review">
           <div class="product-content-DIR">
-            <h3 class="active">Detail</h3>
-            <h3>information</h3>
-            <h3>Reviews</h3>
+            ${findSingleProduct.DIR.map((DIR, index) => `<h3 class="${index == 0 ? "active" : ""}" onclick="dirProductActive(event)">${DIR}</h3>`).join("/")}
+
           </div>
           <div class="product-content-DIR-container">
             <p>
